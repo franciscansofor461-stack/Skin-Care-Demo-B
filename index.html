@@ -178,6 +178,7 @@
             .product-card:nth-child(even) { direction: ltr; }
             .sticky-cta { flex-direction: column; gap: 10px; text-align: center; }
         }
+<<<<<<< HEAD
 
 
         @media (max-width: 768px) {
@@ -355,6 +356,8 @@
 }
 
 
+=======
+>>>>>>> cb7b7cfd55b2a18954415e98357889d6ceac2b5f
     </style>
 </head>
 <body>
@@ -384,9 +387,13 @@
             <h1 class="hero-h1">YOUR GLOW <br> IS <i>LUXURY</i></h1>
             <p class="hero-p">Scientifically curated skincare for melanin-rich skin. Clear acne, fade dark spots, and reclaim your confidence.</p>
             <div class="flex" style="justify-content: center;">
+<<<<<<< HEAD
                 <a href="https://wa.me/2349017430885?text=Hi%20I%20want%20to%20shop%20your%20skincare%20products" class="btn-primary">
     Shop The Ritual
 </a>
+=======
+                <a href="#shop" class="btn-primary">Shop The Ritual</a>
+>>>>>>> cb7b7cfd55b2a18954415e98357889d6ceac2b5f
             </div>
         </div>
     </section>
@@ -404,7 +411,11 @@
                 <input type="text" id="name" name="name" placeholder="Your name" required>
 
                 <label for="phone">WhatsApp Number</label>
+<<<<<<< HEAD
                 <input type="tel" id="phone" name="phone" placeholder="2349017430885" pattern="\d{10,15}" required>
+=======
+                <input type="tel" id="phone" name="phone" placeholder="234XXXXXXXXXX" pattern="\d{10,15}" required>
+>>>>>>> cb7b7cfd55b2a18954415e98357889d6ceac2b5f
 
                 <label for="email">Email Address</label>
                 <input type="email" id="email" name="email" placeholder="you@example.com" required>
@@ -412,7 +423,11 @@
                 <label for="concerns">Skin Concerns</label>
                 <textarea id="concerns" name="concerns" placeholder="Tell us about your skin concerns" required></textarea>
 
+<<<<<<< HEAD
                 <button type="submit" class="btn-primary">Confirm & Chat on WhatsApp</button>
+=======
+                <button type="submit" class="btn-primary">Confirm Consultation</button>
+>>>>>>> cb7b7cfd55b2a18954415e98357889d6ceac2b5f
             </form>
         </div>
     </section>
@@ -464,6 +479,7 @@
 
         <div class="container">
             <div class="product-card">
+<<<<<<< HEAD
     <img src="asset/img/img1.jpeg" class="product-img" alt="Glow Elixir">
 
     <div class="product-info">
@@ -504,6 +520,28 @@
         </a>
     </div>
 </div>
+=======
+                <img src="asset/img/img1.jpeg" class="product-img" alt="Glow Elixir">
+                <div class="product-info">
+                    <span class="stars">★★★★★ (4,892 reviews)</span>
+                    <h2 class="pain-h2">24k Glow Elixir Serum</h2>
+                    <p class="pain-p">Our #1 best-seller. Infused with Vitamin C and Gold Peptides to instantly brighten and fade dark spots within 14 days.</p>
+                    <span class="price">₦25,500</span>
+                    <a href="https://wa.me/234XXXXXXXXX?text=I%20want%20the%20Glow%20Elixir" class="btn-primary">Order on WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="asset/img/img2.jpeg" class="product-img" alt="Acne Kit">
+                <div class="product-info">
+                    <span class="stars">★★★★★ (3,120 reviews)</span>
+                    <h2 class="pain-h2">Acne Clarity Ritual</h2>
+                    <p class="pain-p">A 3-step system that targets acne-causing bacteria without stripping your skin of its natural oils. Safe for sensitive skin.</p>
+                    <span class="price">₦42,000</span>
+                    <a href="https://wa.me/234XXXXXXXXX?text=I%20want%20the%20Acne%20Ritual" class="btn-primary">Claim My Kit</a>
+                </div>
+            </div>
+>>>>>>> cb7b7cfd55b2a18954415e98357889d6ceac2b5f
         </div>
     </section>
 
@@ -625,6 +663,7 @@
         }, 5000);
 
         // Consultation form submission
+<<<<<<< HEAD
        document.getElementById('consultation-form').addEventListener('submit', function (event) {
     event.preventDefault();
 
@@ -653,6 +692,19 @@ Please get back to me.`;
 });
 
 
+=======
+        document.getElementById('consultation-form').addEventListener('submit', event => {
+            event.preventDefault();
+            const name = encodeURIComponent(document.getElementById('name').value.trim());
+            const phone = document.getElementById('phone').value.trim().replace(/\D/g, '');
+            const email = encodeURIComponent(document.getElementById('email').value.trim());
+            const concerns = encodeURIComponent(document.getElementById('concerns').value.trim());
+            const whatsappNumber = '234XXXXXXXXX';
+            const message = `Hi Mabel Cosmetics,\n\nMy name is ${name}.\nWhatsApp: ${phone}.\nEmail: ${email}.\nSkin concerns: ${concerns}.\n\nI would like to book a free consultation.`;
+            const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+            window.open(url, '_blank');
+        });
+>>>>>>> cb7b7cfd55b2a18954415e98357889d6ceac2b5f
     </script>
 </body>
 </html>
